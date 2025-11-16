@@ -11,7 +11,7 @@
 	<Drawer.Portal>
 		<Drawer.Overlay />
 		<Drawer.Content
-			class="fixed right-0 bottom-0 left-0 mt-24 flex h-fit max-h-[90%] flex-col rounded-t-[10px]"
+			class="fixed right-0 bottom-0 left-0 z-50 mt-24 flex h-fit max-h-[90%] flex-col rounded-t-[10px]"
 		>
 			<div class="flex-1 overflow-auto rounded-t-[10px] bg-zinc-200 p-4 pb-6">
 				<div class="mx-auto mb-6 h-1.5 w-12 flex-shrink-0 rounded-full bg-zinc-300" />

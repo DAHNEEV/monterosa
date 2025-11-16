@@ -1,9 +1,15 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 @import 'tailwindcss';
 
+.covered-by-your-grace-regular {
+	font-family: 'Covered By Your Grace', cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
 @theme {
-	--color-background: #cbad8d;
-	--color-primary: #3a2d28;
-	--color-accent: #8e551d;
-	--color-bilard: #1b4332;
+	--color-background: hsl(31, 37.3%, 90%);
+	--color-primary: hsl(16.7, 18.4%, 15%);
+	--color-accent: hsl(29.7, 66.1%, 33.5%);
+	--color-bilard: hsl(154.5, 42.6%, 18.4%);
 }

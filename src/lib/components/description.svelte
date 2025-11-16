@@ -1,30 +1,16 @@
 <script>
-	import { inview } from 'svelte-inview';
-	import { fly } from 'svelte/transition';
-
-	let visible = false;
-	const options = {
-		threshold: 1
-	};
+	import runeScroller from 'rune-scroller';
 </script>
 
-<div
-	use:inview={options}
-	on:inview_enter={() => {
-		visible = true;
-	}}
-	class="flex min-h-[30vh] items-center justify-center"
->
-	{#if visible}
-		<article
-			in:fly={{ y: 60, duration: 700 }}
-			class="mx-auto flex flex-col items-center justify-center p-8 md:w-1/2"
+<div class="covered-by-your-grace-regular flex items-center justify-center bg-background">
+	<article
+		use:runeScroller={{ animation: 'flip-x', duration: 3000 }}
+		class="mx-auto flex flex-col items-center justify-center p-8"
+	>
+		<h2
+			class="mb-4 text-center text-5xl leading-none font-extrabold tracking-tight text-neutral-900 md:text-8xl"
 		>
-			<h2
-				class="mb-4 text-center text-4xl leading-none font-extrabold tracking-tight text-gray-900 md:text-5xl"
-			>
-				W sercu Zakopanego
-			</h2>
-		</article>
-	{/if}
+			W sercu Zakopanego
+		</h2>
+	</article>
 </div>
