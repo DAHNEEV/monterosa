@@ -12,7 +12,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div data-vaul-drawer-wrapper class="flex min-h-screen flex-col">
+<div data-vaul-drawer-wrapper class="flex min-h-screen w-screen flex-col">
 	<Navbar />
 	<div class="flex-1">
 		{@render children()}

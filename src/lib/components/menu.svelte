@@ -1,5 +1,6 @@
 <script>
 	import { Accordion } from 'bits-ui';
+	import { ChevronDown } from 'lucide-svelte';
 
 	const menu = [
 		{
@@ -32,8 +33,8 @@
 	];
 </script>
 
-<main class="mt-20 w-full p-4">
-	<div class="mx-auto flex max-w-xl flex-col gap-8 rounded-2xl bg-background p-4">
+<main class="w-full bg-background p-4 pt-20">
+	<div class="mx-auto flex max-w-xl flex-col gap-8 rounded-2xl bg-primary p-4 text-background">
 		<div class="covered-by-your-grace-regular text-center text-6xl">Menu</div>
 		<Accordion.Root type="multiple" class="flex flex-col gap-4">
 			{#each menu as category, key}
@@ -41,8 +42,9 @@
 					<div>
 						<Accordion.Header>
 							<Accordion.Trigger
-								><div class="text-3xl">
+								><div class="flex items-center justify-center gap-2 text-3xl">
 									{category.name}
+									<ChevronDown />
 								</div></Accordion.Trigger
 							>
 						</Accordion.Header>

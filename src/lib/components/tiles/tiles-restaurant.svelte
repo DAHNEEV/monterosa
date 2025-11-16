@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<a
-				href="#"
+				href="/restauracja"
 				class="inline-flex w-fit items-center justify-center rounded-lg bg-primary px-6 py-4 text-center text-3xl font-medium text-white hover:brightness-90"
 			>
 				Menu

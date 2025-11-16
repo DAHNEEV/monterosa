@@ -1,13 +1,17 @@
 <script lang="ts">
 	/* eslint-disable */
 	import { AspectRatio } from 'bits-ui';
+	import { Menu } from 'lucide-svelte';
 	import { Drawer } from 'vaul-svelte';
 
 	let { open = $bindable(), navbarLinks } = $props();
 </script>
 
 <Drawer.Root bind:open>
-	<Drawer.Trigger>Open Drawer</Drawer.Trigger>
+	<nav class="fixed top-0 z-40 flex h-16 w-screen items-center justify-between bg-neutral-900 px-4">
+		<a href="/"><img src="https://monterosa.pl/graphic/logo.png" class="h-12" alt="" /></a>
+		<Drawer.Trigger class="text-neutral-100"><Menu /></Drawer.Trigger>
+	</nav>
 	<Drawer.Portal>
 		<Drawer.Overlay />
 		<Drawer.Content
