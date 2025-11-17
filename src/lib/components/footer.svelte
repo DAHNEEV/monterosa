@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Phone } from 'lucide-svelte';
+	import { resolve } from '$app/paths';
 
 	const navbarLinks = [
 		{
@@ -25,7 +26,7 @@
 >
 	<div class="flex flex-col items-center gap-4 md:items-start">
 		{#each navbarLinks as item (item.title)}
-			<a href={item.href} class="underline">
+			<a href={resolve(item.href)} class="underline">
 				{item.title}
 			</a>
 		{/each}

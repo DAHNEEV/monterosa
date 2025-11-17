@@ -4,13 +4,16 @@
 	import { Menu } from 'lucide-svelte';
 	import { Drawer } from 'vaul-svelte';
 	import Logo from '$lib/assets/logo.png?enhanced';
+	import { resolve } from '$app/paths';
 
 	let { open = $bindable(), navbarLinks } = $props();
 </script>
 
 <Drawer.Root bind:open>
 	<nav class="fixed top-0 z-40 flex h-16 w-screen items-center justify-between bg-neutral-900 px-4">
-		<a href="/"><enhanced:img src={Logo} class="h-12 w-auto object-contain" alt="logo" /></a>
+		<a href={resolve('/')}
+			><enhanced:img src={Logo} class="h-12 w-auto object-contain" alt="logo" /></a
+		>
 		<Drawer.Trigger class="text-neutral-100"><Menu /></Drawer.Trigger>
 	</nav>
 	<Drawer.Portal>
@@ -25,7 +28,7 @@
 						<AspectRatio.Root ratio={2 / 1} class="overflow-hidden rounded-2xl">
 							<a
 								onclick={() => (open = false)}
-								href={item.href}
+								href={resolve(item.href)}
 								class="flex h-full w-full items-center justify-center overflow-hidden"
 							>
 								<enhanced:img

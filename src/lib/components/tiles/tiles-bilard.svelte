@@ -2,6 +2,7 @@
 	import { Banknote } from 'lucide-svelte';
 	import runeScroller from 'rune-scroller';
 	import Bilard from '$lib/assets/billard.jpg?enhanced';
+	import { resolve } from '$app/paths';
 </script>
 
 <div class="bg-bilard">
@@ -20,7 +21,7 @@
 				</div>
 			</div>
 			<a
-				href="/bilard"
+				href={resolve('/bilard')}
 				class="inline-flex w-fit items-center justify-center rounded-lg bg-bilard px-5 py-3 text-xl font-medium text-neutral-200 brightness-90 hover:brightness-75"
 			>
 				Więcej

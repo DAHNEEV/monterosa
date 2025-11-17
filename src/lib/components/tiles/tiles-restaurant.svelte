@@ -2,6 +2,7 @@
 	import { Clock } from 'lucide-svelte';
 	import runeScroller from 'rune-scroller';
 	import Food from '$lib/assets/food.jpg?enhanced';
+	import { resolve } from '$app/paths';
 </script>
 
 <div class="bg-background">
@@ -26,7 +27,7 @@
 				</div>
 			</div>
 			<a
-				href="/restauracja"
+				href={resolve('/restauracja')}
 				class="inline-flex w-fit items-center justify-center rounded-lg bg-primary px-6 py-4 text-center text-3xl font-medium text-white hover:brightness-90"
 			>
 				Menu
