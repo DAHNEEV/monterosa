@@ -1,13 +1,18 @@
 <script>
 	import { Banknote } from 'lucide-svelte';
 	import runeScroller from 'rune-scroller';
+	import Bilard from '$lib/assets/billard.jpg?enhanced';
 </script>
 
+<svelte:head>
+	<title>Monte Rosa - Bilard</title>
+</svelte:head>
+
 <main class="relative flex h-screen w-full items-center justify-center">
-	<img
-		class="absolute inset-0 h-full w-full object-cover"
-		src="https://monterosa.pl/images/srednie/2024/05/billard_1.jpg"
-		alt=""
+	<enhanced:img
+		class="absolute inset-0 top-0 left-0 h-full w-full object-cover"
+		src={Bilard}
+		alt="bilard"
 	/>
 	<div class="absolute inset-0 bg-black/50"></div>
 	<div

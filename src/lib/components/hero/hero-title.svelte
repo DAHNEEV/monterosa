@@ -18,7 +18,7 @@
 
 <div
 	use:runeScroller={{ animation: 'fade-in-up', duration: 1000 }}
-	class="z-20 mx-auto flex flex-col items-center justify-center p-4 text-center text-balance"
+	class="z-30 mx-auto flex flex-col items-center justify-center p-4 text-center text-balance"
 >
 	<h1 class="mb-4 text-5xl leading-none font-extrabold tracking-tight text-neutral-100 md:text-6xl">
 		Twój dom w sercu gór
@@ -29,8 +29,9 @@
 		<span class="whitespace-nowrap">Blisko Ciebie.</span>
 	</p>
 	<a
+		target="_blank"
 		class:wiggle={wiggling}
-		href="#"
+		href="https://www.booking.com/hotel/pl/willa-monte-rosa.pl.html"
 		class="inline-flex w-fit items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 md:text-xl"
 	>
 		Zarezerwuj na Booking.com

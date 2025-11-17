@@ -1,5 +1,6 @@
 <script lang="ts">
 	/* eslint-disable */
+	import Logo from '$lib/assets/logo.png?enhanced';
 
 	let { open = $bindable(), navbarLinks } = $props();
 </script>
@@ -8,7 +9,9 @@
 	<nav
 		class="mx-1 flex h-fit items-center justify-around gap-4 rounded-2xl bg-neutral-900 px-4 text-lg font-semibold text-white"
 	>
-		<a href="/"><img src="https://monterosa.pl/graphic/logo.png" class="h-16 p-2" alt="" /></a>
+		<a href="/">
+			<enhanced:img src={Logo} class="h-16 w-auto object-contain p-2" alt="logo" />
+		</a>
 		{#each navbarLinks as item (item.title)}
 			<a href={item.href} class="p-3 hover:underline">{item.title}</a>
 		{/each}

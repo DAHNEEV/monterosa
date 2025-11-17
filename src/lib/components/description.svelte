@@ -8,7 +8,7 @@
 		class="mx-auto flex flex-col items-center justify-center p-8"
 	>
 		<h2
-			class="mb-4 text-center text-5xl leading-none font-extrabold tracking-tight text-neutral-900 md:text-8xl"
+			class="mb-4 text-center text-6xl leading-none font-extrabold tracking-tight text-neutral-900 md:text-8xl"
 		>
 			W sercu Zakopanego
 		</h2>

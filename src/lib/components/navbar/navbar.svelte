@@ -2,22 +2,25 @@
 	import NavbarMobile from './navbar-mobile.svelte';
 	import NavbarDesktop from './navbar-desktop.svelte';
 	import { MediaQuery } from 'svelte/reactivity';
+	import Pokoje from '$lib/assets/pokoje.jpg?enhanced';
+	import Restauracja from '$lib/assets/restauracja.jpg?enhanced';
+	import Bilard from '$lib/assets/billard.jpg?enhanced';
 
 	const navbarLinks = [
 		{
 			title: 'Willa',
 			href: '/willa',
-			img: 'https://monterosa.pl/images/onas/2024/05/noclegi_1.jpg'
+			img: Pokoje
 		},
 		{
 			title: 'Restauracja',
 			href: '/restauracja',
-			img: 'https://monterosa.pl/images/srednie/2024/06/resauracja-noc-1920.jpg'
+			img: Restauracja
 		},
 		{
 			title: 'Bilard',
 			href: '/bilard',
-			img: 'https://monterosa.pl/images/srednie/2024/05/billard_1.jpg'
+			img: Bilard
 		}
 	];
 

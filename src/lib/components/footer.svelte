@@ -32,7 +32,7 @@
 	</div>
 	<div class="flex flex-col items-center gap-4 text-xl md:items-end md:text-2xl">
 		<div class="flex items-center justify-center gap-2 md:justify-end"><Phone /> Kontakt</div>
-		<a href="#">Restauracja: +48 123 123 123</a>
-		<a href="#">Willa/Bilard: +48 123 123 123</a>
+		<a href="tel:1234567890">Restauracja: +48 123 123 123</a>
+		<a href="tel:1234567890">Willa/Bilard: +48 123 123 123</a>
 	</div>
 </footer>

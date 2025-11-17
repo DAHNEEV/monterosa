@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import 'rune-scroller/animations.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.ico';
 	import Navbar from '$lib/components/navbar/navbar.svelte';
 	import Footer from '$lib/components/footer.svelte';
 

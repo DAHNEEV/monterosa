@@ -3,13 +3,14 @@
 	import { AspectRatio } from 'bits-ui';
 	import { Menu } from 'lucide-svelte';
 	import { Drawer } from 'vaul-svelte';
+	import Logo from '$lib/assets/logo.png?enhanced';
 
 	let { open = $bindable(), navbarLinks } = $props();
 </script>
 
 <Drawer.Root bind:open>
 	<nav class="fixed top-0 z-40 flex h-16 w-screen items-center justify-between bg-neutral-900 px-4">
-		<a href="/"><img src="https://monterosa.pl/graphic/logo.png" class="h-12" alt="" /></a>
+		<a href="/"><enhanced:img src={Logo} class="h-12 w-auto object-contain" alt="logo" /></a>
 		<Drawer.Trigger class="text-neutral-100"><Menu /></Drawer.Trigger>
 	</nav>
 	<Drawer.Portal>
@@ -23,10 +24,15 @@
 					{#each navbarLinks as item (item.title)}
 						<AspectRatio.Root ratio={2 / 1} class="overflow-hidden rounded-2xl">
 							<a
+								onclick={() => (open = false)}
 								href={item.href}
 								class="flex h-full w-full items-center justify-center overflow-hidden"
 							>
-								<img class="h-full w-full object-cover" src={item.img} alt="" />
+								<enhanced:img
+									class="absolute top-0 left-0 h-full w-full object-cover"
+									src={item.img}
+									alt={item.title}
+								/>
 								<div class="absolute inset-0 bg-black/50"></div>
 								<h1 class="absolute text-5xl font-semibold tracking-wide text-white">
 									{item.title}

@@ -1,39 +1,41 @@
 <script lang="ts">
-	import runeScroller from 'rune-scroller';
-
 	const rooms = [
 		{
 			name: 'Pokój 1',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		},
 		{
 			name: 'Pokój 2',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		},
 		{
 			name: 'Pokój 3',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		},
 		{
 			name: 'Pokój 4',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		},
 		{
 			name: 'Pokój 5',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		},
 		{
 			name: 'Pokój 6',
 			description: 'Komfortowy pokój z widokiem na morze',
-			img: 'https://monterosa.pl/images/card/2024/06/1d-1920_1.jpg'
+			img: 'https://placehold.co/600x400/EEE/31343C'
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Monte Rosa - Pokoje</title>
+</svelte:head>
 
 <main class="container mx-auto max-w-4xl px-4 pt-20 pb-8">
 	<div class="grid grid-cols-1 gap-6 md:grid-cols-3">

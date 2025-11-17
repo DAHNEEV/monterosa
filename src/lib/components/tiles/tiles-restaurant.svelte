@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Clock } from 'lucide-svelte';
 	import runeScroller from 'rune-scroller';
+	import Food from '$lib/assets/food.jpg?enhanced';
 </script>
 
 <div class="bg-background">
@@ -50,11 +51,7 @@
 			use:runeScroller={{ animation: 'fade-in-right', duration: 1000 }}
 			class="overflow-hidden rounded-xl md:w-1/2"
 		>
-			<img
-				class="aspect-square h-full w-full object-cover"
-				src="https://plus.unsplash.com/premium_photo-1671403963864-6d46f3b62352?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=884"
-				alt=""
-			/>
+			<enhanced:img class="aspect-square h-full w-full object-cover" src={Food} alt="" />
 		</div>
 	</section>
 </div>

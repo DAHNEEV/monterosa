@@ -1,15 +1,12 @@
 <script lang="ts">
 	import { Banknote } from 'lucide-svelte';
 	import runeScroller from 'rune-scroller';
+	import Bilard from '$lib/assets/billard.jpg?enhanced';
 </script>
 
 <div class="bg-bilard">
 	<section class="relative flex w-full items-center justify-center overflow-hidden py-10">
-		<img
-			class="absolute inset-0 h-full w-full object-cover"
-			src="https://monterosa.pl/images/srednie/2024/05/billard_1.jpg"
-			alt=""
-		/>
+		<enhanced:img class="absolute inset-0 h-full w-full object-cover" src={Bilard} alt="bilard" />
 		<div class="absolute inset-0 bg-black/70"></div>
 		<div
 			use:runeScroller={{ animation: 'fade', duration: 1000 }}
@@ -23,7 +20,7 @@
 				</div>
 			</div>
 			<a
-				href="#"
+				href="/bilard"
 				class="inline-flex w-fit items-center justify-center rounded-lg bg-bilard px-5 py-3 text-xl font-medium text-neutral-200 brightness-90 hover:brightness-75"
 			>
 				Więcej

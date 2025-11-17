@@ -4,6 +4,10 @@
 	import Tiles from '$lib/components/tiles/tiles.svelte';
 </script>
 
+<svelte:head>
+	<title>Monte Rosa</title>
+</svelte:head>
+
 <Hero />
 <Description />
 <Tiles />
