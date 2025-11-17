@@ -21,7 +21,7 @@
 </script>
 
 <footer
-	class="flex flex-col justify-around gap-10 bg-primary p-10 text-2xl text-background md:flex-row"
+	class="flex flex-col justify-around gap-10 bg-neutral-900 p-10 text-2xl text-background md:flex-row"
 >
 	<div class="flex flex-col items-center gap-4 md:items-start">
 		{#each navbarLinks as item (item.title)}

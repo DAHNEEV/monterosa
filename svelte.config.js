@@ -7,13 +7,17 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 	kit: {
+		appDir: 'app',
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
 			fallback: null,
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			base: '/monterosa'
+		}
 	}
 };
 
